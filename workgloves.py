@@ -25,8 +25,6 @@ prices = [
 
 actions = [["" for _ in range(16)] for _ in range(6)]
 
-
-
 def dp():
     memo = [[None for _ in range(16)] for _ in range(6)]
 

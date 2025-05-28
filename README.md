@@ -84,4 +84,4 @@ print(actions)
 This implementation was written for gloves with 5 scrolling slot and therefore a theoretical maximum of 15 attack.
 We make sure to record what the best option is at each state.
 The values in the memoization table essentially tell us, for each state, the maximum expected profit we can make, ignoring the cost to get the current glove but internalising the cost of scrolls. So if we look at the value in the table corresponding to 5 slots left and 0 attack, it tells us how much we can profit if we start from a clean unscrolled pair of gloves.
-This is useful because we don't necessarily have to start our enterprise from clean gloves, we can buy partially scrolled gloves from the market as well. In such cases, we compare the price of the glove to the expected profit in the table and determine if it is profitable.
+The other values in the table are also useful because we don't necessarily have to start our enterprise from clean gloves, we can buy partially scrolled gloves from the market as well. In such cases, we compare the price of the glove to the expected profit in the table and determine if it is profitable.
